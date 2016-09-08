@@ -1,0 +1,12 @@
+.repl:after {
+  clear:both;
+}
+.replEditor, .replResult {
+  width: 50%;
+  float: left;
+}
+.replResult{
+  color: white;
+  background-color: #333;
+  height: 500px;
+}
