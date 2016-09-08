@@ -15,7 +15,7 @@ class App extends Component {
     super(props);
     this.state = {
       code: "#Type your code in here, and press RUN",
-	  stdout: ""
+      stdout: ""
     };
     $.get('https://nampnq.ribi.io/repl/token').then(function(data){
       this.repl = new ReplitClient('api.repl.it', 80, LANGUAGE, data);
@@ -47,7 +47,7 @@ class App extends Component {
                 mode={LANGUAGE}
                 theme="github"
                 value={this.state.code}
-				onChange={this.onCodeChange.bind(this)}
+                onChange={this.onCodeChange.bind(this)}
                 editorProps={{$blockScrolling: true}}
             />
         </div>
